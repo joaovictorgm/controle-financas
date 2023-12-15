@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de finanças</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1>Controle de Finanças Pessoais</h1>
+        <!-- Formulário para adicionar nova transação-->
+        <form id="transactionForm">
+            <label for="transactionName">Nome:</label>
+            <input type="text" id="transactionName" required>
+
+            <label for="transactionValue">Valor:</label>
+            <input type="number" id="transactionValue" required>
+
+            <button type="submit">Nova Transação</button>
+        </form>
+
+        <!--Lista de transações-->
+        <ul id="transactionList"></ul>
+
+        <!--Saldo total-->
+        <p id="totalBalance">Saldo Total: R$ <span id="balanceAmount">0.00</span></p>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
